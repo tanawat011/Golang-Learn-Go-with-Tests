@@ -24,11 +24,11 @@ func FizzBuzz(number int) string {
 }
 
 func isFizz(number int) bool {
-	return number % fizzNumber == 0
+	return number%fizzNumber == 0
 }
 
 func isBuzz(number int) bool {
-	return number % buzzNumber == 0
+	return number%buzzNumber == 0
 }
 
 func isFizzBuzz(number int) bool {

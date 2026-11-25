@@ -7,7 +7,7 @@ type Shape interface {
 }
 
 type Rectangle struct {
-	Width float64
+	Width  float64
 	Height float64
 }
 
@@ -16,7 +16,7 @@ type Circle struct {
 }
 
 type Triangle struct {
-	Base float64
+	Base   float64
 	Height float64
 }
 

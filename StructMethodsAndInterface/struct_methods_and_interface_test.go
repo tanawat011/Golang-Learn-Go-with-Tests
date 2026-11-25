@@ -37,8 +37,8 @@ func TestArea(t *testing.T) {
 func TestAreaTableDrivenTests(t *testing.T) {
 
 	areaTests := []struct {
-		name string
-		shape Shape
+		name    string
+		shape   Shape
 		hasArea float64
 	}{
 		{name: "Rectangle", shape: Rectangle{Width: 12, Height: 6}, hasArea: 72.0},
