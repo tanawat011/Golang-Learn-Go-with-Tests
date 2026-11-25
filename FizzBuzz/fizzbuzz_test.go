@@ -20,6 +20,8 @@ func TestFizzBuzzWithRightCode(t *testing.T) {
 		13: "13",
 		14: "14",
 		15: "FizzBuzz",
+		30: "FizzBuzz",
+		45: "FizzBuzz",
 	}
 
 	for number, want := range fizzBuzzTable {
@@ -29,6 +31,7 @@ func TestFizzBuzzWithRightCode(t *testing.T) {
 }
 
 func assertFizzBuzz(t *testing.T, want, say string) {
+	t.Helper()
 	if say != want {
 		t.Errorf("Want %s, but said %s", want, say)
 	}

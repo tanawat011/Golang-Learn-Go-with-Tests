@@ -10,11 +10,13 @@ func TestAdder(t *testing.T) {
 	expected := 4
 
 	if sum != expected {
-		t.Errorf(`Expectd "%d" but got "%d"`, expected, sum)
+		t.Errorf("expected %d but got %d", expected, sum)
 	}
 }
 
+// An example with an Output comment is run by go test and checked.
 func ExampleAdd() {
 	sum := Add(1, 5)
 	fmt.Println(sum)
+	// Output: 6
 }
