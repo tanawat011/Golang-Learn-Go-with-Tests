@@ -24,8 +24,8 @@ func TestHello(t *testing.T) {
 	})
 
 	t.Run(`Say hello thai language`, func(t *testing.T) {
-		got := Hello("คนึงนิจ", "thai")
-		want := "สวัสดี, คนึงนิจ"
+		got := Hello("มานะ", "thai")
+		want := "สวัสดี, มานะ"
 		assertCorrectMessage(t, got, want)
 	})
 
